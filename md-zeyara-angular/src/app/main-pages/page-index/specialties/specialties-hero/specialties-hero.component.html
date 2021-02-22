@@ -1,0 +1,46 @@
+<!-- start search-hero section -->
+<section class="zeyara-hero inner-hero">
+  <div class="container zeyara-container">
+      <div class="row">
+          <div class="col-lg-auto text-lg-left col-12">
+              <h1 class="text-md-left">Book a zeyara with one of our <strong>leading Doctors</strong></h1>
+
+              <!-- start search block content -->
+              <div class="zeyara-search">
+                  <div class="doctors-img">
+                      <img src="assets/images/icons/doc.png"> <span>More than 24 cerified doctors </span>
+                  </div>
+                  <form class="specialties-search" [formGroup]="ClinicSearch">
+                      <input
+                      type="search"
+                      class="completer-input form-control mdb-autocomplete"
+                      [ngModel]="searchText | async"
+                      (ngModelChange)="searchText.next($event)"
+                      [mdbAutoCompleter]="auto"
+                      placeholder="Search for Specialty"
+                      formControlName="clinic_search">
+                      <mdb-auto-completer [clearButton]="true" [clearButtonTabIndex]="9" #auto="mdbAutoCompleter" textNoResults="No result founded">
+                        <div class="result-block">
+                          <ul>
+                              <li *ngFor="let option of results | async" [value]="option"><a href="#"><mdb-option>
+                                {{ option }}
+                              </mdb-option></a></li>
+                          </ul>
+                        </div>
+                      </mdb-auto-completer>
+                  </form>
+                  <div class="search-desc text-md-left">Try Cardiology Clinic, Cancer Clinic etc...</div>
+
+              </div>
+              <!-- end search block content -->
+          </div>
+          <div class="col text-md-right hidden-md">
+              <img src="assets/images/icons/spec.svg">
+          </div>
+      </div>
+
+
+
+  </div>
+</section>
+<!-- end search-hero section -->

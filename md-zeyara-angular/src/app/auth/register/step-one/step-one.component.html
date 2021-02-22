@@ -1,0 +1,54 @@
+<div class="login-block register-form">
+  <div class="steps-head">
+      <h3>Create New Account</h3>
+      <p>
+          Access Us top doctors,save yourself time and distance by easily scheduling a video consultation. Connect with your doctor 1:1 anywhere at any time.
+      </p>
+      <div class="form-steps">
+        <div class="step active"></div>
+        <div class="step"></div>
+        <div class="step"></div>
+      </div>
+  </div>
+  <div class="login-form">
+      <div class="login-options">
+          <a class="btn btn-outline-secondary google-btn" (click)="signInWithGoogle()"><img src="assets/images/icons/google.png"> Sign Up with google</a>
+          <a class="btn btn-outline-secondary face-btn" (click)="signInWithFB()"><i class="fab fa-facebook-square"></i> </a>
+      </div>
+      <form class="login">
+          <div class="form-group">
+              <span class="or">or</span>
+              <label>Phone number</label>
+              <form class="login" #f="ngForm" [formGroup]="phoneForm">
+                  <div class="wrapper" style="border-radius: 10px; border: 1px solid #a0a7af; padding: 10px;">
+                      <ngx-intl-tel-input [cssClass]="'custom'" [preferredCountries]="preferredCountries" [enableAutoCountrySelect]="true" [enablePlaceholder]="true" [searchCountryFlag]="true" [searchCountryField]="[SearchCountryField.Iso2, SearchCountryField.Name]" [selectFirstCountry]="false"
+                          [selectedCountryISO]="CountryISO.UnitedStates" [maxLength]="15" [tooltipField]="TooltipLabel.Name" [phoneValidation]="true" [separateDialCode]="separateDialCode" [numberFormat]="PhoneNumberFormat.National"
+                          name="phone" formControlName="phone">
+                      </ngx-intl-tel-input>
+                  </div>
+              </form>
+              <span class="red-msg">Verification will be needed later</span>
+          </div>
+          <div class="form-group">
+              <div class="custom-control custom-checkbox">
+                  <input type="checkbox" class="custom-control-input" id="customCheck1">
+                  <label class="custom-control-label" for="customCheck1">
+            by clicking <strong>Sign Up</strong> you agree to MD Zeyara
+            <a href="#">terms of services</a> and <a href="#">Privacy policy</a>
+        </label>
+              </div>
+          </div>
+          <div class="form-group">
+              <div class="custom-control custom-checkbox">
+                  <input type="checkbox" class="custom-control-input" id="customCheck2">
+                  <label class="custom-control-label" for="customCheck2">
+            I do not wish to receive product updates, news or any marketing communication from MD Zeyara
+        </label>
+              </div>
+          </div>
+          <button type="submit" class="btn btn-primary next-step" data-toggle="modal" data-target="#verify-modal">sign Up <img src="assets/images/icons/arrow.svg"></button>
+      </form>
+
+      <p class="text-center">Already have an account. <a routerLink='/login/login-step-one'>Sign In</a></p>
+  </div>
+</div>

@@ -1,0 +1,583 @@
+@media(min-width:992px) {
+    .show-md {
+        display: none !important;
+    }
+}
+
+@media(min-width:768px) {
+    .show-sm {
+        display: none !important;
+    }
+}
+
+@media(max-width:1250px) {
+    .zeyara-container {
+        width: 100%;
+        max-width: 100%;
+        padding: 0 30px;
+    }
+    .navbar .nav-item {
+        padding: 20px 10px;
+    }
+    .doctor-info .doctor-card .main-info .doc-img {
+        width: 125px;
+        height: 125px;
+    }
+    .doctor-info .doctor-card .main-info .doctor-rate h3 {
+        font-size: 30px;
+    }
+    .doctor-info .doctor-calander h4 {
+        font-size: 25px;
+    }
+    .doctor-info .doctor-card .main-info {
+        padding: 15px 15px 10px 15px;
+    }
+    .zeyara-dashboard .dash-content .content-block .available {
+        display: inline-block;
+        margin-top: 5px;
+        margin-left: 0;
+    }
+    .loved-ones .container {
+        max-width: 703px;
+        .col-auto:first-child {
+            margin-left: -104px;
+        }
+        .col-auto:last-child {
+            margin-right: -107px;
+        }
+        .loved-feature,
+        .zeyara-logo {
+            zoom: 0.8;
+        }
+    }
+}
+
+@media(max-width:991.98px) {
+    .navbar {
+        background-color: #fff !important;
+        padding-bottom: 20px;
+        padding-top: 20px;
+        box-shadow: 0 4px 9px 0 rgba(197, 236, 250, 0.4);
+        .navbar-toggler {
+            border: 1px solid rgba(0, 0, 0, 0.15);
+            box-shadow: 0 1px 1px rgba(50, 50, 50, 0.1);
+        }
+        .navbar-collapse {
+            position: absolute;
+            right: 10px;
+            top: 80px;
+            background: #fff;
+            border: 1px solid rgba(0, 0, 0, 0.17);
+            box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+            transition: all 0.5s ease-in;
+            border-radius: 10px;
+            z-index: 9;
+            &::before {
+                content: "";
+                width: 0;
+                height: 0;
+                position: absolute;
+                bottom: 100%;
+                right: 13px;
+                border-width: 0 8px 8px 8px;
+                border-style: solid;
+                border-color: rgba(0, 0, 0, 0.1) transparent;
+            }
+            &:after {
+                content: "";
+                width: 0;
+                height: 0;
+                position: absolute;
+                bottom: 100%;
+                right: 15px;
+                border-width: 0 6px 6px 6px;
+                border-style: solid;
+                border-color: #fff transparent;
+            }
+        }
+        .nav-item.account-dropdown .account-btn {
+            border-radius: 0;
+        }
+        .nav-item {
+            border-bottom: 1px solid #e6e8ea;
+            box-shadow: inset 0 1px 0 rgba(255, 255, 255, 1);
+            padding: 15px 10px;
+            .link-text {
+                display: none;
+            }
+            &.active {
+                &::after {
+                    display: none;
+                }
+            }
+        }
+        .ml-auto {
+            li:first-child {
+                border-top-left-radius: 10px;
+                border-top-right-radius: 10px;
+            }
+            li.account-dropdown {
+                border-radius: 0;
+                border-bottom-left-radius: 10px;
+                border-bottom-right-radius: 10px;
+            }
+        }
+    }
+    .hidden-md {
+        display: none !important;
+    }
+    .zeyara-hero h1 {
+        font-size: 35px;
+    }
+    .zeyara-hero .services .card h2 {
+        font-size: 18px;
+    }
+    .slick-next {
+        right: 10px;
+    }
+    .slick-prev {
+        left: -6px;
+        z-index: 9;
+    }
+    .slick-prev:before,
+    .slick-next:before {
+        font-size: 40px;
+        color: $dark-slate-blue;
+    }
+    .text-box p {
+        font-size: 16px;
+    }
+    h2 {
+        font-size: 30px;
+    }
+    h2 .text-blue {
+        font-size: 18px;
+    }
+    h3 {
+        font-size: 20px;
+    }
+    .how-work .works-card p {
+        font-size: 14px;
+    }
+    footer ul li .note.success {
+        display: none
+    }
+    .access-doctor .access-block {
+        text-align: center;
+        img {
+            margin-bottom: 20px;
+        }
+        .text-left {
+            text-align: center !important;
+            br {
+                display: none;
+            }
+        }
+    }
+    .zeyara-faq .accordion .card .card-header .btn {
+        padding-right: 50px;
+        min-height: 50px;
+        line-height: 1;
+        position: relative;
+        .collapse-icon {
+            position: absolute;
+            right: 0px;
+            top: 0;
+        }
+    }
+    .speciality .speciality-card .available-doc .btn-dark-blue {
+        margin-top: 20px;
+    }
+    .speciality .speciality-card .shadow-right .col-lg-auto img {
+        margin-bottom: 20px;
+    }
+    .zeyara-hero.inner-hero {
+        padding-bottom: 50px;
+        padding-top: 50px;
+    }
+    .doctor-calander .table td,
+    .doctor-calander .table th {
+        padding: 0.3rem .25rem;
+    }
+    .doctor-info .doctor-card .main-info .doc-img,
+    .doctor-info .doctor-card .main-info.collapsed .doc-img {
+        width: 75px;
+        height: 75px;
+    }
+    .doctor-info .doctor-info-row {
+        border-radius: 20px;
+        -webkit-box-shadow: 0 0 14px 0 rgba(33, 184, 238, 0.09);
+        box-shadow: 0 0 14px 0 rgba(33, 184, 238, 0.09);
+        background-color: #fff;
+        padding-bottom: 15px;
+        margin-bottom: 35px;
+        .row {
+            margin: 0;
+        }
+        .main-info .row {
+            margin: 0 -15px
+        }
+        .doctor-card {
+            border-radius: 0;
+            box-shadow: none;
+            background-color: transparent;
+        }
+        .doctor-calander .sticky-part {
+            position: relative;
+        }
+    }
+    .doctor-info .doctor-card .main-info {
+        padding: 15px 0;
+    }
+    .doctor-info-row.active .card-body {
+        padding: 0
+    }
+    .doctor-info .doctor-card .info {
+        padding: 15px 0;
+        border-top: 5px solid rgba(197, 236, 250, 0.19);
+    }
+    .nav2.navbar .nav-item.account-dropdown .dropdown-menu {
+        position: absolute;
+    }
+    .navbar.nav2 .nav-item.account-dropdown .account-btn {
+        border-radius: 10px;
+    }
+    .zeyara-dashboard .dash-content .content-block .med-info .col-lg-auto {
+        text-align: center;
+        a {
+            display: inline-block;
+            padding: 5px
+        }
+    }
+    .loved-ones {
+        zoom: 0.8;
+        padding-bottom: 80px;
+    }
+}
+
+@media(max-width:767.98px) {
+    .hide-sm {
+        display: none !important;
+    }
+    .speciality .speciality-card .shadow-right {
+        border: 0;
+        border-bottom: 2px solid rgba(197, 236, 250, 0.19);
+    }
+    .speciality .speciality-card .shadow-left {
+        border: 0;
+        border-top: 2px solid rgba(197, 236, 250, 0.19);
+    }
+    .doctor-info .doctor-calander {
+        width: 100%;
+        margin-top: 30px;
+        height: auto;
+        padding-bottom: 30px;
+    }
+    .subscribe {
+        background-position: bottom 0 center;
+        margin-top: 0;
+        padding: 50px 0;
+        text-align: center;
+        .zeyara-container {
+            padding: 0 30px;
+        }
+    }
+    .zeyara-hero.pharmcy-hero h1 {
+        margin: 0 auto 36px auto;
+        .blue-text {
+            text-align: center;
+        }
+    }
+    .zeyara-hero.pharmcy-hero .left-side {
+        margin-bottom: 20px;
+        text-align: center;
+        p {
+            margin: 0 auto 1rem auto
+        }
+    }
+    .main-info {
+        .col-auto,
+        .col {
+            max-width: 100%;
+            flex: 0 0 100%;
+        }
+    }
+    .doctor-info .doctor-card .main-info .doctor-rate {
+        display: block;
+    }
+    .doctor-info .doctor-card .main-info .doctor-rate h3 {
+        display: flex;
+        align-items: center;
+        padding-right: 73px;
+    }
+    .doctor-info-row.collapsed-block .main-info .doc-img,
+    .doctor-info-row.active .main-info .doc-img {
+        width: 49px;
+        height: 49px;
+        display: inline-flex;
+        margin: 0 15px 0 0;
+    }
+    .doctor-info .doctor-card .main-info .doctor-rate h3,
+    .doctor-info .doctor-card .info h3 {
+        font-size: 18px;
+        span {
+            font-size: 12px;
+        }
+    }
+    .doctor-info .doctor-card .main-info .doctor-rate {
+        position: relative;
+    }
+    .doctor-info .doctor-card .main-info .doctor-rate .rate {
+        position: absolute;
+        top: 0;
+        right: 0;
+    }
+    .doctor-info .doctor-card .info p {
+        font-size: 14px;
+    }
+    .booking-login .right-side {
+        order: 1
+    }
+    .booking-login .left-side {
+        order: 2
+    }
+    .booking-login .zeyara-faq {
+        display: none;
+    }
+    .modal .modal-dialog {
+        max-width: 100%;
+        padding: 0 20px;
+        margin: 0;
+    }
+    .zeyara-dashboard .dashboard-head {
+        padding: 15px 0;
+        text-align: center;
+        .col-md-auto .btn {
+            margin-top: 25px;
+            width: 100%;
+            text-align: left;
+            img {
+                float: right;
+                margin-top: 8px;
+            }
+        }
+        .row {
+            .col-auto {
+                flex: 0 0 100%;
+            }
+            .col {
+                flex: 0 0 100%;
+                border: 0;
+                margin-top: 15px;
+            }
+        }
+    }
+    .zeyara-dashboard .dash-content .content-block .med-info {
+        padding: 15px
+    }
+    .loved-ones {
+        zoom: 1;
+        .row {
+            border: 0;
+        }
+        .col,
+        .col-auto {
+            flex: 0 0 100%;
+            margin-right: 0 !important;
+            margin-left: 0 !important;
+            zoom: 1;
+        }
+        .col {
+            order: 1;
+        }
+        .col-auto:last-child {
+            order: 2;
+        }
+        .col-auto:first-child {
+            order: 3;
+        }
+    }
+    .loved-ones {
+        zoom: 1;
+        padding-bottom: 0;
+        .loved-feature {
+            margin: 0 auto 30px auto;
+            position: relative;
+            &::before {
+                content: "";
+                display: block;
+                width: 8px;
+                height: 30px;
+                background: $duck-egg-blue-three;
+                position: absolute;
+                top: -30px;
+                left: calc(50% - 6px);
+            }
+        }
+    }
+    .loved-ones .container .loved-feature,
+    .loved-ones .container .zeyara-logo {
+        zoom: 1;
+    }
+    .loved-ones .show-sm {
+        .zeyara-logo {
+            width: 254px;
+            height: 254px;
+            margin: 30px auto;
+            position: relative;
+            &::before {
+                content: "";
+                display: block;
+                width: 8px;
+                height: 30px;
+                background: $duck-egg-blue-three;
+                position: absolute;
+                top: -30px;
+                left: calc(50% - 6px);
+            }
+        }
+        h2 {
+            font-size: 24px;
+            max-width: 300px;
+            margin: 0 auto;
+        }
+    }
+    .zeyara-dashboard .dashboard-head .btn {
+        margin-top: 20px;
+    }
+}
+
+@media(max-width:575.98px) {
+    footer ul {
+        columns: 2;
+    }
+    .access-doctor .access-block {
+        padding: 20px;
+    }
+    .zeyara-faq .accordion {
+        margin-top: 0;
+    }
+    .zeyara-hero.inner-hero .doctors-img {
+        text-align: center;
+    }
+    .zeyara-hero.inner-hero .doctors-img img {
+        max-width: 100px
+    }
+    .zeyara-hero.inner-hero .doctors-img span {
+        font-size: 15px;
+    }
+    .doctor-info .doctor-card .info p {
+        font-size: 16px;
+    }
+    .doctor-info .doctor-card .main-info {
+        padding: 15px 0;
+    }
+    .doctor-info .doctor-card .main-info .doctor-rate .rate {
+        zoom: 0.8;
+    }
+    footer {
+        padding-top: 40px;
+    }
+    footer .content {
+        display: block;
+    }
+    .booking-login .btn-outline-secondary {
+        margin: 0 7px 0 0;
+    }
+    .login-form .payment {
+        padding: 14px 10px;
+        border-radius: 10px;
+        img {
+            margin-top: 15px;
+            max-width: 100px;
+        }
+        span {
+            width: 100%;
+            max-width: 130px;
+            padding: 10px;
+            border-radius: 10px;
+        }
+    }
+    .booking-login h4 {
+        font-size: 18px;
+        span {
+            font-size: 12px;
+        }
+    }
+    .session-info .col-auto img {
+        max-width: 50px;
+    }
+    .booking-login h3 {
+        font-size: 28px;
+    }
+    .booking-login p,
+    .login-form .form-group .custom-control.custom-checkbox label {
+        font-size: 14px;
+    }
+    .login-form .form-group .custom-control.custom-checkbox label::before,
+    .login-form .form-group .custom-control.custom-checkbox label::after {
+        width: 20px;
+        height: 20px;
+        left: -30px;
+    }
+    .login-form .form-group .custom-control.custom-checkbox {
+        padding-left: 30px;
+    }
+    .modal .modal-body h3 {
+        font-size: 24px;
+    }
+    .modal .modal-body p {
+        font-size: 14px;
+    }
+    .zeyara-dashboard .dash-content .content-block .med-info .col-auto {
+        flex: 0 0 100%;
+    }
+    .zeyara-dashboard .dash-content .content-block .med-info .med-img {
+        margin-bottom: 15px;
+    }
+    .doctor-info .doctor-calander .table td span {
+        width: 105px
+    }
+    .loved-ones .container .loved-feature,
+    .loved-ones .show-sm .zeyara-logo {
+        zoom: 0.7;
+        transition: all 250ms ease;
+    }
+    .loved-ones .container .loved-feature:hover {
+        zoom: 0.9;
+    }
+    .loved-ones .img-fluid {
+        position: relative;
+        z-index: 9;
+    }
+    .zeyara-dashboard .dash-content .content-block .med-info.lab-result .col-auto:first-child,
+    .zeyara-dashboard .dash-content .content-block .med-info.lab-result .col-auto:nth-child(2) {
+        flex: 0 0 auto;
+        width: auto;
+        max-width: 100%;
+    }
+    .zeyara-dashboard .dash-content .content-block .med-info.lab-result .col {
+        flex: 0 0 100%;
+    }
+    .zeyara-dashboard .dash-content .content-block .med-info p i {
+        font-size: 18px;
+    }
+    .zeyara-dashboard .dash-content .content-block .med-info.records-block h5 {
+        margin-bottom: 15px;
+    }
+}
+
+@media(max-width:405.98px) {
+    footer ul {
+        columns: 1;
+    }
+    .login-options .hide-xs {
+        display: none !important;
+    }
+    .zeyara-dashboard .dash-content .content-block .title-head .float-right {
+        float: none !important;
+    }
+    .zeyara-dashboard .dashboard-head .btn {
+        padding: 20px
+    }
+}

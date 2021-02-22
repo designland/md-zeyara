@@ -1,0 +1,88 @@
+<!-- start search-hero section -->
+<section class="zeyara-hero">
+  <div class="container zeyara-container">
+      <h1>Book a zeyara with one of our <strong>leading Doctors</strong></h1>
+
+      <!-- start search block content -->
+      <div class="zeyara-search">
+          <form [formGroup]="ClinicSearch">
+              <input
+              type="search"
+              class="completer-input form-control mdb-autocomplete"
+              [ngModel]="searchText | async"
+              (ngModelChange)="searchText.next($event)"
+              [mdbAutoCompleter]="auto"
+              placeholder="Search for Specialty"
+              formControlName="clinic_search">
+              <mdb-auto-completer [clearButton]="true" [clearButtonTabIndex]="9" #auto="mdbAutoCompleter" textNoResults="No result founded">
+                <div class="result-block">
+                  <ul>
+                      <li *ngFor="let option of results | async" [value]="option"><a routerLink="/specialties"><mdb-option>
+                        {{ option }}
+                      </mdb-option></a></li>
+                  </ul>
+                </div>
+              </mdb-auto-completer>
+          </form>
+          <div class="search-desc">Try Cardiology Clinic, Cancer Clinic etc...</div>
+          <div class="result-block">
+              <!--div class="results">
+                  <ul>
+                      <li><a href="#">Cancer clinic</a></li>
+                      <li><a href="#">Cardiology Clinic</a></li>
+                  </ul>
+              </div -->
+              <div class="no-result">
+                  <p>No result founded</p>
+                  <a href="#">See all specialties <i class="fas fa-angle-right"></i></a>
+              </div>
+
+          </div>
+      </div>
+      <!-- end search block content -->
+
+      <!-- start zeyara services cards -->
+      <div class="services">
+          <div class="row">
+              <div class="col-lg-3 col-md-6 col-12 mb-3">
+                  <div class="card">
+                      <a href="#">
+                          <img src="assets/images/icons/card1.svg">
+                          <h2>Book a Mental Health zeyara</h2>
+                          <span class="card-desc">Consult with top doctors</span>
+                      </a>
+                  </div>
+              </div>
+              <div class="col-lg-3 col-md-6 col-12 mb-3">
+                  <div class="card">
+                      <a href="#">
+                          <img src="assets/images/icons/card2.svg">
+                          <h2>Get the loved ones package</h2>
+                          <span class="card-desc">Consult with top doctors</span>
+                      </a>
+                  </div>
+              </div>
+              <div class="col-lg-3 col-md-6 col-12 mb-3">
+                  <div class="card">
+                      <a routerLink="/specialties">
+                          <img src="assets/images/icons/card3.svg">
+                          <h2>Request a zeyara with a specialist</h2>
+                          <span class="card-desc">Consult with top doctors</span>
+                      </a>
+                  </div>
+              </div>
+              <div class="col-lg-3 col-md-6 col-12 mb-3">
+                  <div class="card">
+                      <a href="#">
+                          <img src="assets/images/icons/card4.svg">
+                          <h2>Subscribe to our online pharmacy</h2>
+                          <span class="card-desc">Consult with top doctors</span>
+                      </a>
+                  </div>
+              </div>
+          </div>
+      </div>
+      <!-- end zeyara services cards -->
+  </div>
+</section>
+<!-- end search-hero section -->

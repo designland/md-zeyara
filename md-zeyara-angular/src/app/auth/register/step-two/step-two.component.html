@@ -1,0 +1,59 @@
+<div class="login-block steps" id="step2">
+  <h3>Complete your profile</h3>
+  <p>
+      Access Us top doctors,save yourself time and distance by easily scheduling a video consultation. Connect with your doctor 1:1 anywhere at any time.
+  </p>
+  <div class="form-steps">
+      <div class="step active"></div>
+      <div class="step active"></div>
+      <div class="step"></div>
+  </div>
+  <div class="login-form">
+
+      <form>
+          <div class="form-group">
+              <label>Full name</label>
+              <input type="text" class="form-control" [value]="userName" placeholder="Ahmed Mohamed Wahba">
+              <i class="fas fa-user"></i>
+          </div>
+          <div class="form-group">
+              <label>Email address</label>
+              <input type="email" class="form-control" [value]="userEmail" placeholder="Name@mail.com">
+              <i class="fas fa-envelope"></i>
+          </div>
+          <div class="form-group">
+              <label>Password</label>
+              <input type="password" class="form-control" placeholder="Ahmed Mohamed Wahba">
+              <i class="fas fa-lock"></i>
+          </div>
+          <div class="form-group">
+              <label>Birth date</label>
+              <input type="date" class="form-control" placeholder="1/1/2001">
+              <i class="far fa-calendar-alt"></i>
+          </div>
+          <div class="form-group">
+              <label>Gender</label>
+              <div class="custom-control custom-radio custom-control-inline">
+                  <input type="radio" id="customRadioInline3" name="gander" class="custom-control-input">
+                  <label class="custom-control-label" for="customRadioInline3">Male</label>
+              </div>
+              <div class="custom-control custom-radio custom-control-inline">
+                  <input type="radio" id="customRadioInline4" name="gander" class="custom-control-input">
+                  <label class="custom-control-label" for="customRadioInline4">Female</label>
+              </div>
+          </div>
+          <div class="form-group">
+              <label>Your Country</label>
+              <select class="form-control custom-select">
+                  <option selected>Select Country</option>
+                  <option value="1">One</option>
+                  <option value="2">Two</option>
+                  <option value="3">Three</option>
+                </select>
+              <i class="fas fa-map-marker-alt"></i>
+          </div>
+          <a routerLink="/register/step-three" type="button" class="btn btn-primary login-btn next-step">Next <img src="assets/images/icons/arrow.svg"></a>
+      </form>
+      <p class="text-center"><strong class="text-dark-blue prev-step">Back</strong></p>
+  </div>
+</div>

@@ -1,0 +1,14 @@
+{
+  "projects": {
+    "default": "mdzeyaraclinic"
+  },
+  "targets": {
+    "mdzeyaraclinic": {
+      "hosting": {
+        "md-zeyara": [
+          "mdzeyaraclinic"
+        ]
+      }
+    }
+  }
+}

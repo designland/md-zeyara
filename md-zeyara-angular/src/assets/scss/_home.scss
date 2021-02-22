@@ -1,0 +1,421 @@
+/*** start hero style ***/
+
+.zeyara-hero {
+    background: url("../images/hero.png") no-repeat top;
+    background-size: 100% calc(100% - 80px);
+    padding-top: 45px;
+    h1 {
+        max-width: 423px;
+        margin: 0 auto 36px auto;
+        font-size: 50px;
+        line-height: 1.01;
+        color: $dark;
+        text-align: center;
+        strong {
+            font-family: "spoof-black";
+            display: block;
+        }
+        .blue-text {
+            font-size: 18px;
+            font-weight: normal;
+            color: $lightish-blue;
+            display: block;
+            margin-bottom: 15px;
+        }
+    }
+    /**services style **/
+    .services {
+        margin-top: 52px;
+        .slick-slide {
+            padding: 10px 0 20px 0;
+        }
+        .card {
+            padding: 35px 22px 31px 27px;
+            border-radius: 20px;
+            box-shadow: 0 4px 9px 0 rgba(197, 236, 250, 0.4);
+            text-align: center;
+            border: 0;
+            height: 100%;
+            transition: all 250ms ease;
+            a {
+                text-decoration: none !important;
+                transition: color 250ms ease;
+            }
+            img {
+                max-width: fit-content;
+                width: auto;
+                margin: 0 auto 12px auto;
+            }
+            h2 {
+                max-width: 230px;
+                margin: 0 auto 10px auto;
+                font-size: 24px;
+                font-weight: 600;
+                line-height: 1.18;
+                letter-spacing: -0.72px;
+                text-align: center;
+                color: $dark;
+                transition: color 250ms ease;
+            }
+            .card-desc {
+                font-size: 12px;
+                color: #888888;
+                display: block;
+            }
+            &:hover {
+                box-shadow: 0 4px 9px 0 rgba(177, 178, 179, 0.4);
+                @media(min-width: 992px) {
+                    margin-top: -15px;
+                }
+                h2 {
+                    color: $lightish-blue;
+                }
+            }
+        }
+    }
+    &.inner-hero {
+        background: url("../images/bg2.svg") no-repeat top;
+        background-size: cover;
+        padding-top: 80px;
+        h1 {
+            color: $dark-slate-blue;
+        }
+        .doctors-img {
+            margin-bottom: 30px;
+            @media(max-width: 991.98px) {
+                text-align: center;
+            }
+            span {
+                font-size: 20px;
+                line-height: 1.06;
+                letter-spacing: -0.6px;
+                color: $dark-slate-blue;
+                margin-left: 5px;
+            }
+        }
+    }
+    &.mental-hero {
+        h1 {
+            max-width: 499px
+        }
+    }
+}
+
+.zeyara-search {
+  width: 100%;
+  max-width: 423px;
+  margin: 0 auto;
+  position: relative;
+  form {
+      margin: 0 0 16px;
+      padding: 24px 18px 24px 70px;
+      border-radius: 20px;
+      background: #fff url("../images/icons/search.png") no-repeat;
+      background-position: left 18px top 24px;
+      .form-control {
+          padding: 0;
+          border: 0;
+          outline: none;
+          box-shadow: none;
+          color: #172d45;
+          font-size: 16px;
+      }
+  }
+  .search-desc {
+      font-family: "AvenirNext";
+      font-size: 14px;
+      font-weight: 500;
+      text-align: center;
+      color: rgba(0, 0, 0, 0.66);
+  }
+  .result-block {
+      border-radius: 20px;
+      box-shadow: 0 4px 15px 0 rgba(197, 236, 250, 0.4);
+      background: #fff;
+      //position: absolute;
+      z-index: 9;
+      width: 100%;
+      //top: 100px;
+      .completer-dropdown .completer-row {
+          background: transparent !important;
+      }
+      ul {
+          margin: 0;
+          padding: 0;
+          li {
+              list-style: none;
+              list-style-type: none;
+              border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+              padding: 12px 18px 12px 70px;
+              background: url("../images/icons/search.png") no-repeat;
+              background-position: left 18px top 24px;
+              a {
+                  font-family: "AvenirNext";
+                  font-size: 18px;
+                  line-height: 1.06;
+                  letter-spacing: -0.54px;
+                  color: $dark-slate-blue;
+                  background: transparent;
+              }
+              &:last-child {
+                  border: 0
+              }
+          }
+      }
+      .no-result {
+          text-align: center;
+          padding: 55px 15px;
+          font-size: 14px;
+          display: none;
+          p {
+              opacity: 0.5;
+              color: #172d45;
+          }
+          a {
+              color: $lightish-blue;
+              text-decoration: none !important;
+              i {
+                  margin-left: 20px;
+              }
+          }
+      }
+  }
+}
+
+
+/*** start how-work style ***/
+
+.how-work {
+    .works-card {
+        .card-img-block {
+            height: 171px;
+            margin-bottom: 20px;
+            display: flex;
+            justify-content: center;
+            align-items: flex-end;
+        }
+        h3 {
+            margin-bottom: 15px;
+        }
+        p {
+            width: 100%;
+            max-width: 324px;
+            margin: 15px auto;
+            font-family: "AvenirNext";
+            font-size: 16px;
+            color: $metallic-blue;
+        }
+    }
+    .appoitment-btn {
+        text-align: left;
+        padding: 20px 29.5px 19px 26px;
+        border-radius: 20px;
+        background-color: $lightish-blue;
+        font-size: 18px;
+        margin-top: 20px;
+        img {
+            margin-left: 22px;
+        }
+        &:hover {
+            background-color: $dark-slate-blue;
+        }
+    }
+}
+
+
+/*** start zeyara-doctors style ***/
+
+
+/********/
+
+.bg-block {
+    background: url("../images/bg.png") no-repeat;
+    background-size: 100% calc(100% - 100px);
+    background-position: top 100px center;
+    @media(max-width: 545px) {
+        background-size: 100% calc(100% - 75px);
+        background-position: top 75px center;
+    }
+    @media(max-width:428px) {
+        background-size: 100% calc(100% - 55px);
+        background-position: top 55px center;
+    }
+    @media(max-width:400px) {
+        background-size: 100% calc(100% - 100px);
+        background-position: top 100px center;
+    }
+}
+
+.zeyara-doctors {
+    margin-top: 100px;
+    .container-fluid {
+        padding: 0 0;
+    }
+    .slider {
+        .slick-slide img {
+            max-width: 100%;
+        }
+        .slick-slide img {
+            transform: scale(.75);
+            transition: transform .3s cubic-bezier(.4, 0, .2, 1);
+            opacity: 0.8;
+        }
+        .slick-center {
+            padding: 0;
+        }
+        .slick-center>img,
+        .slick-slide:hover>img {
+            transform: scale(1);
+            opacity: 1;
+        }
+    }
+    .doctor-info {
+        max-width: 643px;
+        margin: 24px auto;
+        text-align: center;
+        .doctor-name {
+            font-size: 24px;
+            font-weight: 500;
+            text-align: center;
+            color: $dark-slate-blue;
+        }
+        p {
+            font-size: 16px;
+            color: $metallic-blue;
+            margin-bottom: 26px;
+        }
+        .doc-certificate {
+            img {
+                display: inline-block;
+            }
+        }
+        .doc-major {
+            margin: 24px 0;
+            span {
+                font-family: "AvenirNext";
+                font-size: 14px;
+                color: $dark-slate-blue;
+                background: #fff;
+                border-radius: 25px;
+                padding: 10px 30px;
+                margin: 5px;
+                display: inline-block;
+            }
+        }
+        a {
+            font-size: 14px;
+            text-align: left;
+            color: $metallic-blue;
+            i {
+                color: $dark-slate-blue;
+                margin-left: 10px;
+            }
+        }
+    }
+}
+
+
+/**** start faq style ****/
+
+.zeyara-faq {
+    padding-top: 125px;
+    .container {
+        padding: 0 10vw
+    }
+    .accordion {
+        margin-top: 86px;
+        .card {
+            border: 0;
+            border-bottom: 1px solid #d9d9d9;
+            border-radius: 0;
+            background: none;
+            .card-header {
+                padding: 25px 10px 25px 2px;
+                border: 0;
+                background: none;
+                .btn {
+                    font-size: 20px;
+                    font-weight: 500;
+                    text-align: left;
+                    color: $dark-slate-blue;
+                    line-height: 50px;
+                    padding: 0;
+                    text-decoration: none !important;
+                    outline: none !important;
+                    box-shadow: none !important;
+                    &:focus {
+                        outline: none !important;
+                    }
+                    .collapse-icon {
+                        width: 49px;
+                        height: 49px;
+                        border-radius: 50%;
+                        background-color: #f2fbfe;
+                        display: inline-flex;
+                        float: right;
+                        justify-content: center;
+                        align-items: center;
+                    }
+                    &.collapsed {
+                        .fa-minus:before {
+                            content: "\f067";
+                        }
+                    }
+                }
+            }
+            .card-body {
+                padding: 0 0 23px 0;
+                p {
+                    max-width: 784px;
+                    font-family: "AvenirNext";
+                    font-size: 18px;
+                    font-weight: 500;
+                    color: $metallic-blue;
+                    margin-bottom: 24px;
+                }
+                .faq-author {
+                    font-size: 18px;
+                    font-weight: 500;
+                    color: $dark-slate-blue;
+                    img {
+                        width: 15px
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+/*** start access-doctor style ****/
+
+.access-doctor {
+    .access-block {
+        padding: 60px;
+        border-radius: 25px;
+        background-color: #ebeffe;
+        h2 {
+            font-size: 44px;
+            margin-bottom: 23px;
+        }
+        p {
+            font-family: "AvenirNext";
+            font-size: 19px;
+            font-weight: 500;
+            color: $metallic-blue;
+        }
+        .btn-primary {
+            padding: 20px 25px 19px 26px;
+            border-radius: 20px;
+            background-color: $lightish-blue;
+            font-size: 18px;
+            margin-top: 30px;
+            .fas {
+                margin-left: 30px;
+            }
+        }
+        img {
+            max-width: 100%;
+        }
+    }
+}

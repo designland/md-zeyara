@@ -1,0 +1,525 @@
+/*** start pharmcy-hero style **/
+
+.zeyara-hero.pharmcy-hero {
+    padding-top: 40px;
+    padding-bottom: 40px;
+    background-size: cover;
+    @media(min-width: 768px) {
+        padding-top: 90px;
+        padding-bottom: 170px;
+    }
+    h1 {
+        margin: 0 0 36px 0;
+        max-width: 475px;
+        .blue-text {
+            font-size: 18px;
+            font-weight: normal;
+            text-align: left;
+            color: $lightish-blue;
+            display: block;
+            margin-bottom: 15px;
+        }
+    }
+    .left-side {
+        p {
+            max-width: 475px;
+            font-family: "AvenirNext";
+            font-size: 20px;
+            color: rgba(0, 0, 0, 0.64);
+        }
+    }
+    .pharmacy-search-block {
+        padding: 48px 76px 44px 48px;
+        border-radius: 20px;
+        box-shadow: 0 4px 9px 0 rgba(197, 236, 250, 0.4);
+        background-color: #fff;
+    }
+    .btn {
+        width: 100%;
+        max-width: 300px;
+        text-align: left;
+        img {
+            float: right;
+            margin-top: 8px;
+        }
+    }
+}
+
+.pharmacy-search-block {
+    .delivery-country {
+        margin-top: 10px;
+        font-family: "AvenirNext";
+        font-size: 16px;
+        font-weight: 500;
+        color: $dark-slate-blue;
+        text-align: center;
+        color: $dark;
+        .fas {
+            color: $seafoam-blue
+        }
+        span {
+            display: inline-block;
+            margin: 0 0 0 5px;
+            padding: 3px 20px;
+            border-radius: 20px;
+            background-color: rgba(56, 93, 249, 0.13);
+            color: $lightish-blue;
+        }
+    }
+    .zeyara-search {
+        max-width: 100%;
+        form {
+            padding: 0;
+            background: transparent;
+            margin-bottom: 26px;
+            .form-control {
+                height: 86px;
+                background: #f4faf9 url(../images/icons/search.png) no-repeat;
+                background-position: left 18px top 28px;
+                margin: 0 0 16px;
+                padding: 24px 18px 24px 70px;
+                border-radius: 20px;
+            }
+            .btn {
+                text-align: left;
+                width: 100%;
+                max-width: 100%;
+                img {
+                    float: right;
+                    margin-top: 8px;
+                }
+                &:hover {
+                    background: $seafoam-blue
+                }
+            }
+        }
+        .search-desc {
+            font-size: 16px;
+        }
+        .pharmacy-results {
+            ul li a {
+                display: block;
+                span:not(.float-right) {
+                    display: block;
+                    font-family: "AvenirNext";
+                    font-size: 14px;
+                    color: rgba(0, 0, 0, 0.38);
+                    margin-top: 10px;
+                }
+                .float-right {
+                    font-family: "AvenirNext";
+                    font-size: 12px;
+                    color: $dark-slate-blue;
+                    i {
+                        color: #78bcb0;
+                        margin-right: 4px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+/***start subscribe style ***/
+
+.subscribe {
+    background: url("../images/hero.png") no-repeat;
+    background-position: bottom 55px center;
+    margin-top: 100px;
+    .zeyara-container {
+        padding-left: 0;
+    }
+    .pharmacy-img {
+        width: 100%;
+        max-width: 544.1px;
+        margin-top: -55px;
+    }
+    h3 {
+        font-size: 44px;
+        font-weight: 500;
+        font-stretch: normal;
+        font-style: normal;
+        line-height: 1.06;
+        letter-spacing: -1.32px;
+        color: $dark;
+        margin-bottom: 23px;
+    }
+    p {
+        font-family: "AvenirNext";
+        font-size: 19px;
+        font-weight: 500;
+        font-stretch: normal;
+        font-style: normal;
+        line-height: normal;
+        letter-spacing: normal;
+        text-align: left;
+        color: $metallic-blue;
+    }
+    .btn {
+        width: 175px;
+    }
+}
+
+
+/*** zeyara-intro style **/
+
+.zeyara-intro {
+    background: url("../images/book-bg.svg") no-repeat center;
+    background-size: cover;
+    margin-top: 68px;
+    border-radius: 20px;
+    .inner-block {
+        max-width: 516px;
+        padding-top: 45px;
+        margin: 0 auto;
+        p {
+            font-family: "AvenirNext";
+            font-size: 19px;
+            font-weight: 500;
+            color: $metallic-blue;
+        }
+        .btn {
+            width: 175px;
+            padding: 20px 24px 19px 26px;
+            img {
+                margin-left: 13px;
+            }
+        }
+        .white-bg {
+            margin-top: 50px;
+            padding: 30px 48px 41px 62px;
+            object-fit: contain;
+            box-shadow: 0 0 19px 0 rgba(197, 236, 250, 0.38);
+            background-color: white;
+            border-radius: 15px;
+            .doctors-img {
+                img {
+                    max-width: 110px;
+                    margin-right: 13px;
+                }
+                span {
+                    font-size: 20px;
+                    line-height: 1.06;
+                    letter-spacing: -0.6px;
+                    color: $dark-slate-blue;
+                }
+            }
+            .text-note {
+                background: url("../images/icons/text-bg.svg") no-repeat;
+                padding: 28px 21px 16px 38px;
+                background-size: 100%;
+                font-family: "AvenirNext";
+                font-size: 14px;
+                line-height: 1.18;
+                letter-spacing: -0.42px;
+                text-align: left;
+                color: #212123;
+            }
+        }
+    }
+}
+
+
+/*** start loved ones style **/
+
+.main {
+    position: relative;
+    .abs-img {
+        position: absolute;
+        top: 0;
+        max-width: 100%;
+    }
+}
+
+.loved-hero {
+    padding-top: 80px;
+    background: transparent;
+    .text-box {
+        max-width: 563px;
+    }
+    h1 {
+        max-width: 100%;
+        line-height: 1.12;
+        font-size: 49px;
+        .blue-text {
+            text-align: center;
+        }
+        strong {
+            display: block;
+        }
+    }
+    .btn-gray-dark {
+        width: 100%;
+        max-width: 257px;
+        margin-top: 15px;
+    }
+}
+
+.loved-ones {
+    text-align: center;
+    margin-top: 25px;
+    padding-bottom: 150px;
+    .row {
+        border: 8px solid $duck-egg-blue-three;
+        border-top: 0;
+        border-bottom-left-radius: 150px;
+        border-bottom-right-radius: 150px;
+    }
+    .col {
+        padding-top: 85px;
+    }
+    .col-auto {
+        padding: 0;
+        &:first-child {
+            margin-left: -130px;
+        }
+        &:last-child {
+            margin-right: -130px;
+        }
+    }
+    .container {
+        max-width: 1000px;
+    }
+    .btn-gray-dark {
+        width: 100%;
+        max-width: 257px;
+        margin-top: 15px;
+    }
+    .loved-feature {
+        width: 254px;
+        height: 254px;
+        margin: 24px 0;
+        padding: 67.5px 29px 67px;
+        background-color: $duck-egg-blue-three;
+        text-align: center;
+        border-radius: 50%;
+        transition: all 250ms ease;
+        .feature-title {
+            font-size: 16px;
+            color: #394952;
+            line-height: normal;
+            margin-top: 24px;
+        }
+        &:hover {
+            background-color: $metallic-blue;
+            .feature-title {
+                color: #fff;
+            }
+            .svg path {
+                fill: #fff;
+            }
+        }
+        &:first-child {
+            margin-top: 0;
+        }
+    }
+    h2 {
+        font-size: 38px;
+        font-weight: normal;
+        font-stretch: normal;
+        font-style: normal;
+        line-height: 1.12;
+        letter-spacing: normal;
+        text-align: center;
+        color: $dark;
+        .gray {
+            color: $metallic-blue;
+        }
+    }
+    .zeyara-logo {
+        width: 289px;
+        height: 289px;
+        margin: 40px auto -145px auto;
+        padding: 5px 30px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        box-shadow: 0 5px 13px 0 #cceefb;
+        background-color: #fff;
+        border-radius: 50%;
+        img {
+            width: 100%
+        }
+    }
+}
+
+
+/***** pharmacy-steps pages style ****/
+
+.pharmacy-steps {
+    height: auto;
+    min-height: 100%;
+    padding: 20px 0;
+    background: url("../images/hero.png") no-repeat center;
+    .site-logo {
+        margin-bottom: 0;
+    }
+    .login-block {
+        width: 100%;
+        max-width: 600px;
+        min-height: 578px;
+        margin: 12px auto;
+        padding: 34px 85px 45px 85px;
+        border-radius: 20px;
+        box-shadow: 0 0 15px 0 rgba(197, 236, 250, 0.4);
+        background-color: white;
+        h3 {
+            font-size: 31px;
+        }
+        .form-steps .step {
+            width: 63px;
+        }
+        .btn-green {
+            width: 100%;
+            text-align: left;
+            img {
+                float: right;
+                margin-top: 8px;
+            }
+        }
+        .steps-icon {
+            width: 61px;
+            height: 61px;
+            margin: 0 auto 20px auto;
+            padding: 5px;
+            background-color: #e5eafe;
+            display: inline-flex;
+            border-radius: 50%;
+            justify-content: center;
+            align-items: center;
+            i {
+                color: $lightish-blue;
+                font-size: 31px;
+            }
+        }
+        .available-results {
+            ul {
+                li {
+                    padding: 20px 20px 16px 20px;
+                    background: none;
+                    text-align: left;
+                    a {
+                        font-family: "Spoof";
+                        font-size: 16px;
+                        font-weight: normal;
+                        font-stretch: normal;
+                        font-style: normal;
+                        line-height: normal;
+                        letter-spacing: normal;
+                        text-align: left;
+                        color: #172d45;
+                        img {
+                            width: 16px
+                        }
+                    }
+                    .float-right {
+                        font-family: "AvenirNext";
+                        font-size: 12px;
+                        font-weight: normal;
+                        font-stretch: normal;
+                        font-style: normal;
+                        line-height: normal;
+                        letter-spacing: normal;
+                        color: $dark-slate-blue;
+                    }
+                }
+            }
+        }
+    }
+    .added-medic {
+        margin-top: 70px;
+        margin-bottom: 70px;
+        .added {
+            border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+            padding: 24px 0px 24px 50px;
+            background: url("../images/icons/pharmacy-search.jpg") no-repeat;
+            background-position: left 0px top 22px;
+            background-size: 40px auto;
+            font-size: 16px;
+            line-height: 1.06;
+            letter-spacing: -0.54px;
+            color: $dark-slate-blue;
+            &:last-child {
+                border: 0
+            }
+            span:not(.float-right) {
+                display: block;
+                font-family: "AvenirNext";
+                font-size: 14px;
+                font-weight: normal;
+                font-stretch: normal;
+                font-style: normal;
+                line-height: normal;
+                letter-spacing: normal;
+                text-align: left;
+                color: rgba(0, 0, 0, 0.38);
+            }
+            .float-right {
+                cursor: pointer;
+                font-family: "AvenirNext";
+                font-size: 12px;
+                font-weight: normal;
+                font-stretch: normal;
+                font-style: normal;
+                line-height: normal;
+                letter-spacing: normal;
+                color: #dc4d41;
+            }
+        }
+    }
+    .payment-step {
+        ul {
+            li {
+                padding: 20px 0;
+                &:first-child {
+                    border: 0
+                }
+            }
+        }
+        .payment {
+            max-width: 388px;
+            float: none;
+            margin: 25px auto;
+            padding: 8px 20px;
+            display: inline-flex;
+            justify-content: space-between;
+            align-items: center;
+            img {
+                max-height: 17px;
+                margin-top: 0;
+            }
+            span {
+                padding: 11px;
+                width: 144px
+            }
+        }
+        .custom-control.custom-checkbox {
+            max-width: 388px;
+            margin: 0 auto;
+            .text-red {
+                color: #e02020;
+            }
+            label {
+                font-size: 14px;
+            }
+            label::before,
+            label::after {
+                left: -40px;
+                width: 25px;
+                height: 22px;
+                border-color: rgba(151, 151, 151, 0.42);
+            }
+        }
+        .btn-gray {
+            width: 140px;
+            text-align: left;
+            margin: 48px auto 0 auto;
+            display: block;
+            img {
+                float: right;
+                margin-top: 8px;
+            }
+        }
+    }
+}

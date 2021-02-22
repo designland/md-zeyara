@@ -1,0 +1,15 @@
+{
+  "webapi": "https://zeyaraserverapi.azurewebsites.net/api",
+  "firebaseConfig": {
+    "apiKey": "AIzaSyB_rNhH9pxhumTwFRbD24PsS37_QW7lPCk",
+    "authDomain": "mdzeyaraclinic.firebaseapp.com",
+    "databaseURL": "https://mdzeyaraclinic.firebaseio.com",
+    "projectId": "mdzeyaraclinic",
+    "storageBucket": "mdzeyaraclinic.appspot.com",
+    "messagingSenderId": "788712205844",
+    "appId": "1:788712205844:web:e19e2766774a7cc7fa4101",
+    "measurementId": "G-QTFGL3FZ31"
+  }
+}
+
+

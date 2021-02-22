@@ -1,0 +1,329 @@
+/*** start login page style ****/
+
+.booking-login {
+    height: 100%;
+    .container-fluid,
+    .outer-row {
+        height: 100%;
+    }
+    .left-side {
+        padding: 30px;
+        @media(min-width: 1200px) {
+            padding: 30px 127px
+        }
+    }
+    .site-logo {
+        margin-bottom: 50px;
+    }
+    h3 {
+        font-size: 38px;
+        font-weight: normal;
+        line-height: 1.06;
+        letter-spacing: -1.14px;
+        color: $dark-slate-blue;
+    }
+    p {
+        font-size: 16px;
+        color: $metallic-blue;
+    }
+    .btn-outline-secondary {
+        margin: 0 24px 0 0;
+        padding: 15px 27px 15px 27px;
+        border-radius: 10px;
+        border: solid 1px $cool-grey;
+        font-size: 18px;
+        color: $dark-slate-blue;
+        transition: all 250ms ease;
+        i {
+            font-size: 35px;
+            vertical-align: middle;
+        }
+        .fa-google {
+            color: #D54C3F;
+            margin-right: 17px;
+        }
+        .fa-facebook-square {
+            color: #3C5A99;
+            font-size: 30px;
+        }
+        &.face-btn {
+            width: 66px;
+            height: 63px;
+            padding: 0;
+            display: inline-flex;
+            justify-content: center;
+            align-items: center;
+            &:hover {
+                background-color: #3C5A99;
+                border-color: #3C5A99;
+                i {
+                    color: #fff;
+                }
+            }
+        }
+        &.google-btn:hover {
+            background-color: #D54C3F;
+            border-color: #D54C3F;
+            color: #fff;
+            i {
+                color: #fff;
+            }
+        }
+    }
+    .btn-primary {
+        padding: 20px 27px 19px 20px;
+        border-radius: 20px;
+        background-color: $lightish-blue;
+        width: 100%;
+        margin-bottom: 35px;
+        font-size: 18px;
+        text-align: left;
+        img {
+            float: right;
+            margin-top: 5px;
+        }
+    }
+    .or {
+        display: block;
+        font-size: 16px;
+        color: #000;
+        padding: 15px 0;
+        text-transform: capitalize;
+    }
+    h4 {
+        font-size: 24px;
+        font-weight: 600;
+        line-height: 1.06;
+        letter-spacing: -0.72px;
+        color: $dark-slate-blue;
+        margin-bottom: 15px;
+        span {
+            font-size: 16px;
+            display: block;
+            color: $dark-slate-blue;
+            font-weight: 400;
+            margin-top: 8px;
+            font-family: "AvenirNext";
+        }
+    }
+    ul {
+        padding: 0;
+        margin: 0;
+        list-style: none;
+        list-style-type: none;
+        li {
+            font-size: 16px;
+            color: $dark-slate-blue;
+            border-top: 1px solid rgba(0, 0, 0, 0.1);
+            padding: 25px;
+            text-transform: capitalize;
+            .text-blue {
+                color: $lightish-blue;
+                float: right;
+            }
+            img {
+                margin-right: 5px;
+            }
+        }
+    }
+    .right-side {
+        background: url("../images/bg2.svg") no-repeat;
+        background-size: cover;
+        background-position: left 0 top 0;
+        padding: 25px;
+        .session-info {
+            background: #fff;
+            border-radius: 20px;
+            .row {
+                padding: 25px
+            }
+        }
+    }
+    .zeyara-faq {
+        padding-top: 50px;
+        .accordion {
+            margin-top: 20px;
+            .card .card-header {
+                padding: 25px 10px 20px 2px;
+            }
+            .card .card-header .btn {
+                font-size: 18px;
+                color: $dark-slate-blue;
+                .collapse-icon {
+                    width: 35px;
+                    height: 35px;
+                    font-size: 15px;
+                }
+            }
+        }
+    }
+    .form-steps {
+        margin-bottom: 25px;
+        .step {
+            width: 78px;
+            height: 5px;
+            margin: 0 0 0 10px;
+            opacity: 0.22;
+            border-radius: 8px;
+            background-color: $lightish-blue;
+            display: inline-block;
+            &.active {
+                opacity: 1;
+            }
+        }
+    }
+}
+
+
+/*** general forms style ***/
+
+.red-msg {
+    color: $rose-pink;
+    text-align: right;
+    display: block;
+    margin-top: 5px;
+}
+
+.login-form {
+    .text-dark-blue {
+        cursor: pointer;
+    }
+    .form-group {
+        position: relative;
+        label {
+            font-size: 16px;
+            margin-bottom: 13px;
+            color: #172d45;
+            display: block;
+        }
+        .form-control {
+            border-radius: 10px;
+            border: solid 1px $cool-grey;
+            height: 50px;
+            font-size: 16px;
+            outline: none !important;
+            box-shadow: none !important;
+            padding-left: 50px;
+            &::placeholder {
+                color: rgba(23, 45, 69, 0.42);
+            }
+        }
+        textarea.form-control {
+            height: 97px;
+            padding-left: .75rem;
+        }
+        i {
+            color: $cool-grey;
+            position: absolute;
+            /* top: 50%; */
+            bottom: 15px;
+            left: 20px;
+            font-size: 20px;
+        }
+        .phone-field {
+            border-radius: 10px;
+            border: solid 1px $cool-grey;
+            padding-left: 50px;
+            position: relative;
+            font-size: 16px;
+            color: #172d45;
+            margin: 0;
+            .form-control {
+                border: 0;
+                padding-left: 10px;
+            }
+            .fa-phone {
+                transform: rotate(100deg);
+                font-size: 25px;
+                bottom: 12px
+            }
+            img {
+                width: 30px;
+                margin-bottom: 4px;
+            }
+            .col {
+                border-left: solid 1px $cool-grey;
+            }
+        }
+        .custom-control {
+            &.custom-checkbox {
+                padding-left: 40px;
+                label {
+                    color: rgb(120, 120, 120);
+                    font-size: 18px;
+                    &::before,
+                    &::after {
+                        left: -40px;
+                        width: 30px;
+                        height: 30px;
+                    }
+                }
+            }
+            strong,
+            a {
+                color: $dark-slate-blue;
+                font-weight: 600;
+            }
+        }
+        &.upload-img {
+            padding: 30px;
+            border-radius: 6px;
+            border: dashed 2px rgba(0, 0, 0, 0.17);
+            display: flex;
+            justify-content: center;
+            img {
+                width: 86px;
+                height: 86px;
+                margin: 0 16px 0 0;
+                border-radius: 50%;
+            }
+            .upload-btn {
+                span {
+                    margin: 6px 2px 10px 16px;
+                    font-size: 18px;
+                    font-weight: 500;
+                    color: $dark-slate-blue;
+                }
+                .btn {
+                    padding: 11px 13px;
+                    font-size: 16px;
+                    color: $lightish-blue;
+                    border-color: $lightish-blue;
+                    width: auto;
+                    display: block;
+                    &:hover {
+                        background: $lightish-blue;
+                        color: #fff;
+                    }
+                }
+            }
+        }
+        &.no-icon {
+            .form-control {
+                padding-left: 20px;
+                padding-right: 20px;
+            }
+        }
+    }
+    .payment {
+        background: #e7f0fe;
+        padding: 14px 25px;
+        border-radius: 20px;
+        float: left;
+        width: 100%;
+        img {
+            margin-top: 8px;
+        }
+        span {
+            display: inline-block;
+            float: right;
+            width: 150px;
+            border-radius: 20px;
+            background-color: $lightish-blue;
+            color: #fff;
+            padding: 15px;
+            font-size: 18px;
+            text-align: center;
+        }
+    }
+}

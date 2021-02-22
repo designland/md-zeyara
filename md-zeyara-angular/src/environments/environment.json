@@ -1,0 +1,12 @@
+{
+  "webapi": "https://localhost:8001/api",
+  "firebaseConfig": {
+    "apiKey": "AIzaSyDUjHOkRutHHjOI1r-j3BQezeIfjXIy5q0",
+    "authDomain": "mdzeyara.firebaseapp.com",
+    "databaseURL": "https://mdzeyara.firebaseio.com",
+    "projectId": "mdzeyara",
+    "storageBucket": "mdzeyara.appspot.com",
+    "messagingSenderId": "383147933762",
+    "appId": "1:383147933762:web:dbd3cbcc379406d5baeddb"
+  }
+}

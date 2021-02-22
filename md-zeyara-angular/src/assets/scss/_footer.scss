@@ -1,0 +1,37 @@
+/**** start footer style ****/
+
+footer {
+    padding-top: 100px;
+    .content {
+        display: inline-block;
+    }
+    ul {
+        padding: 0;
+        li {
+            list-style: none;
+            list-style-type: none;
+            margin-bottom: 10px;
+            a {
+                font-size: 16px;
+                color: $metallic-blue;
+            }
+            .note {
+                min-width: 43px;
+                padding: 4px 9px;
+                border-radius: 5px;
+                background-color: $duck-egg-blue;
+                font-size: 12px;
+                color: $dark-slate-blue;
+                margin-left: 10px;
+                &.success {
+                    background-color: $seafoam-blue;
+                    color: #fff;
+                }
+            }
+        }
+    }
+    p {
+        font-size: 16px;
+        color: $metallic-blue;
+    }
+}

@@ -1,0 +1,64 @@
+<div class="login-block steps" id="step2">
+  <div class="steps-head">
+      <h3>Confirm your booking</h3>
+      <p>
+          Access Us top doctors,save yourself time and distance by easily scheduling a video consultation. Connect with your doctor 1:1 anywhere at any time.
+      </p>
+  </div>
+
+
+  <div class="login-form">
+      <form>
+          <div class="form-group visit-option">
+              <label>Who are you booking the visit for?</label>
+              <div (click)="bookMySelf()" class="custom-control custom-radio custom-control-inline first-option">
+                  <input type="radio" id="customRadioInline1" name="visit-user" class="custom-control-input" checked="checked" value="myself">
+                  <label class="custom-control-label" for="customRadioInline1">For myself</label>
+              </div>
+              <div (click)="bookOthers()" class="custom-control custom-radio custom-control-inline second-option">
+                  <input type="radio" id="customRadioInline2" name="visit-user" class="custom-control-input" value="others">
+                  <label class="custom-control-label" for="customRadioInline2">for someone else</label>
+              </div>
+          </div>
+          <div class="visitor-info hide" id="others">
+              <div class="form-group">
+                  <label>Name of the patient</label>
+                  <input type="text" class="form-control" placeholder="Ahmed Mohamed Wahba">
+                  <i class="fas fa-user"></i>
+              </div>
+              <div class="form-group">
+                  <label>Birth date</label>
+                  <input type="date" class="form-control" placeholder="1/1/2001">
+                  <i class="far fa-calendar-alt"></i>
+              </div>
+              <div class="form-group">
+                  <label>Gender of the paitent</label>
+                  <div class="custom-control custom-radio custom-control-inline">
+                      <input type="radio" id="male-gander" name="gander" class="custom-control-input">
+                      <label class="custom-control-label" for="customRadioInline3">Male</label>
+                  </div>
+                  <div class="custom-control custom-radio custom-control-inline">
+                      <input type="radio" id="female-gander" name="gander" class="custom-control-input">
+                      <label class="custom-control-label" for="customRadioInline4">Female</label>
+                  </div>
+              </div>
+              <div class="form-group">
+                  <label>Choose relationship</label>
+                  <select class="custom-select">
+            <option selected>My Father</option>
+            <option value="1">One</option>
+            <option value="2">Two</option>
+            <option value="3">Three</option>
+          </select>
+              </div>
+          </div>
+          <div class="form-group my-book show">
+              <label>The reason of the visit</label>
+              <textarea class="form-control" placeholder="Write here..."></textarea>
+          </div>
+          <div class="payment">
+              <img src="assets/images/icons/paypal.png"> <span data-toggle="modal" data-target="#pay-modal">Pay $30</span>
+          </div>
+      </form>
+  </div>
+</div>
